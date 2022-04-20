@@ -1,0 +1,1 @@
+Workflows connectors simplify calling services.
