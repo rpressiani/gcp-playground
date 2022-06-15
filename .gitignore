@@ -1,5 +1,6 @@
 # Custom
 service_account_keys.json
+*.tfbackend
 
 # General
 .DS_Store
