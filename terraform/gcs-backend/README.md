@@ -19,10 +19,10 @@ In this example, the Terraform backend, that is where the state snapshots are st
 -  Create `terraform.tfvars` where the project name and the credentials filepath will be set
 -  Create `config.tfbackend` where the backend config parameters will be set
 
-  ```terraform
-  prefix      = "terraform/state"
-  bucket      = "bucket_name"
-  credentials = "../service_account_keys.json"
-  ```
+    ```terraform
+    prefix      = "terraform/state"
+    bucket      = "bucket_name"
+    credentials = "../service_account_keys.json"
+    ```
 
 -  Initialize terraform and apply
