@@ -1,16 +1,17 @@
 steps:
 - id: 'tf init'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
   - 'terraform init'
 - id: 'tf apply'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
   - 'terraform destroy -auto-approve'
   env:
   - 'TF_VAR_project=$PROJECT_ID'
-  

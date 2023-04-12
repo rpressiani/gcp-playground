@@ -1,12 +1,14 @@
 steps:
 - id: 'tf init'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
   - 'terraform init'
 - id: 'tf validate'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
@@ -15,6 +17,7 @@ steps:
   - 'TF_VAR_project=$PROJECT_ID'
 - id: 'tf plan'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
@@ -23,6 +26,7 @@ steps:
   - 'TF_VAR_project=$PROJECT_ID'
 - id: 'tf apply'
   name: 'hashicorp/terraform:1.4.4'
+  dir: 'terraform/flask-vm'
   entrypoint: 'sh'
   args: 
   - '-c'
