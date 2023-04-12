@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+terraform/
+cloudbuild.yaml
+README.md
+route_guide_client.py
+route_guide_pb2*.py
