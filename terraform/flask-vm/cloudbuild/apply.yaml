@@ -33,3 +33,4 @@ steps:
   - 'terraform apply -auto-approve'
   env:
   - 'TF_VAR_project=$PROJECT_ID'
+  logsBucket: 'gs://bionix-vertex-374317-cloud-build-demo/logs'

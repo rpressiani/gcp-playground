@@ -1,3 +1,16 @@
+terraform {
+  backend "gcs" {
+    bucket = "bionix-vertex-374317-cloud-build-demo"
+  }
+
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "4.56.0"
+    }
+  }
+}
+
 provider "google" {
   project = var.project
   region  = var.region
